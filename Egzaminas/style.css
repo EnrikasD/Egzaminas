@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    padding: 30px;
+}
+
+header a {
+    color: #555555;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+header nav span {
+    color: #FF3998;
+    padding-right: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+    header a {
+        display: none;
+    }
+}
+
+h6 {
+    font-size: 16px;
+    color:#FF3998;
+    padding-left: 32px;
+    padding: 20px;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+.menu-list {
+    padding-right: 60px;
+    color: lightslategray;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-list {
+        display: none;
+    }
+}
+
+.hero-container {
+    background-image: url(graphic.png);
+    background-repeat: no-repeat;
+    background-position: bottom 40px right -150px;
+    background-size: 75%;
+    width: auto;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-container {
+        background-repeat: no-repeat;
+        background-position: bottom 40px right -150px;
+        background-size: 35%;
+        width: auto;
+        padding-bottom: 50px;
+    }
+}
+
+main .hero-btn {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(0deg,#FF3998,#FF8139, #FF8139, #FF8139)
+    border-box;
+    border-radius: 80em;
+    border: 4px solid transparent;
+    display: inline-flex;
+    padding: 0.8rem 2.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+main .hero-section p {
+    color: #555555;
+    font-size: 20px;
+    padding-left: 32px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main .hero-section h1 {
+    color: #111111;
+    font-size: 48px;
+    padding-left: 32px;
+    padding: 20px;
+}
+
+main .text-section {
+    background-image: url(background.svg);
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 20rem;
+}
+
+main .free-text {
+    text-align: left;
+    padding-top: 5rem;
+    padding-left: 1rem;
+}
+
+.companies {
+    width: 85%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+img {
+    padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+    img {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2.5rem;
+    }
+}
+
+.women-container {
+    background-image: url(upsell-footer-image.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 40px right -150px;
+    background-size: 75%;
+    width: auto;
+    padding-bottom: 50px;
+}
+
+h2, p {
+    padding-left: 20px;
+}
+
+main .nft-wrapper {
+    display: flex;
+    gap: 3rem;
+    overflow: scroll;
+}
+
+main .nft-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.featured-nft {
+    background-color: white;
+}
+
+.nft-card {
+    background-color: rgb(200, 201, 203);
+    border-radius: 20px;
+}
+
+.gloop {
+    color: #FF8139;
+    font-size: small;
+}
+
+.bid {
+    color: #555555;
+    font-size: 10px;
+}
+
+footer {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.footer-icons {
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer-links-1,
+.footer-links-2 {
+    flex-direction: column;
+}
+
+.links-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.footer-links-2div >p:first-child {
+    font-weight: 600
+}
+
+.footer-links-1 {
+    width: 100%;
+}
+
+.end {
+    padding: 1rem;
+  }
+
+@media screen and (min-width: 468px) {
+     footer {
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .footer-1 img {
+        width: 60%;
+      }
+    
+      .footer-1 {
+        flex-grow: 3;
+      }
+    
+      .footer-2 {
+        flex-wrap: nowrap;
+        flex-grow: 5;
+      }
+
+    .links-wrapper {
+      flex-wrap: nowrap;
+      gap: 0.5rem;
+    }
+    .end {
+        justify-content: space-between;
+}
+}
